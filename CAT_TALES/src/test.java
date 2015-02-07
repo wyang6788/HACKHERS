@@ -49,11 +49,11 @@ public class test {
         glfwWindowHint(GLFW_VISIBLE, GL_FALSE); // the window will stay hidden after creation
         glfwWindowHint(GLFW_RESIZABLE, GL_TRUE); // the window will be resizable
  
-        int WIDTH = 300;
-        int HEIGHT = 300;
+        int WIDTH = 1280;
+        int HEIGHT = 720;
  
         // Create the window
-        window = glfwCreateWindow(WIDTH, HEIGHT, "Hello World!", NULL, NULL);
+        window = glfwCreateWindow(WIDTH, HEIGHT, "Cat Tales", NULL, NULL);
         if ( window == NULL )
             throw new RuntimeException("Failed to create the GLFW window");
  
@@ -93,7 +93,7 @@ public class test {
         GLContext.createFromCurrent();
  
         // Set the clear color
-        glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
  
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
