@@ -18,6 +18,7 @@ public class Player {
 		claws = 0;
 		mice = 0;
 		distanceTraveled = 0;
+
 	
 	}
 	

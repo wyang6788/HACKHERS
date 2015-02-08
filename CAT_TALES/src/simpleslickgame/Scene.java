@@ -25,6 +25,7 @@ public class Scene {
 		this.dangerLevel = dangerLevel;
 		this.neighbors = neighbors;
 		scenes = new ArrayList<Scene>();
+		description = null;
 	}
 	
 	public void  setDescription(String description){
@@ -42,6 +43,12 @@ public class Scene {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public void setBackground(Image background){
+		
+		this.background = background;
+	
 	}
 	
 	public Image getBackground(){
